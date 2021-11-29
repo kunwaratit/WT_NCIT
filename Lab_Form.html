@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+    <table border="1" cellspacing ="0" align="center" >
+        <form action="">
+        <tr>
+            <td colspan="4" align="center"><b> Register Here</b></td>
+            
+        </tr>
+        <tr>
+            <td><span id="req">* </span>First Name<td><input type="text" placeholder="First Name" maxlength="10" required></td></td>
+            <td>last Name<td><input type="text" name="lastname" id="" placeholder="last Name"></td></td>
+        </tr>
+        <tr >
+            <td ><span id="req">* </span>Email</td>
+            <td colspan="3" ><input type="email" placeholder="Email address" required></td>
+        </tr>
+        <tr>
+            <td><span id="req">* </span>Password</td>
+            <td><input type="password"placeholder="Password" required></td>
+            <td><span id="req">* </span>Re-Password</td>
+            <td><input type="password"placeholder="Re-Password" required></td>
+        </tr>
+    <tr>
+        <td><span id="req" required>* </span>Gender</td>
+        <td><label><input type="radio" name="gender" value="male" checked>Male</label>
+           <label> <input type="radio" name="gender" value="female">Female</label>
+        </td>
+        <td><span id="req" required>* </span>Country
+            <td>
+                <select name="country" id="" >
+                    <option value="cntry">Select Country</option>
+                    <option value="nepal" >Nepal</option>
+                    <option value="china">China</option>
+                    <option value="aus">Australia</option>
+                    <option value="afr">Africa</option>
+                </select>
+            </td>
+        </td>
+
+    </tr>
+    <tr>
+        <td>Your Photo</td>
+        <td colspan="2"><input type="file"></td>
+        <td colspan="2"></td>
+    </tr>
+    <tr align="center">
+        <td colspan="2"> <button type="submit">Submit</button> </td>
+        <td colspan="2"  ><button type="reset">Clear Form</button></td>
+    </tr>
+    
+    </form>
+
+</table>
+<p>Note:Marked with <span id="req">*</span>are required fields</p>
+</div>
+<style>
+    body{
+        font-size: 18px;
+        background-color: rgb(80, 62, 36);
+    }
+    table{
+        background-color: rgb(216, 216, 245);
+        
+    }
+   
+    p{
+        text-align: center;
+        color: white;
+        text-decoration: underline;
+    }
+   
+    #req{
+        color :red;
+    }
+    td,input{
+        border-radius: 3px;
+        height: 20px;
+        padding: 5px;
+    }
+    button{
+        font-size: 15px;
+    }
+   
+    button:hover{
+        color: rgb(31, 18, 216);
+        background-color: rgb(255, 255, 255);
+        
+    }
+</style>
+</body>
+</html>

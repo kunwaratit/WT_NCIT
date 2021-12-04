@@ -15,29 +15,29 @@
             
         </tr>
         <tr>
-            <td><span id="req">* </span>First Name<td><input type="text" placeholder="First Name" maxlength="10" required></td></td>
+            <td><span class="req">* </span>First Name<td><input type="text" placeholder="First Name" maxlength="10" required></td></td>
             <td>last Name<td><input type="text" name="lastname" id="" placeholder="last Name"></td></td>
         </tr>
         <tr >
-            <td ><span id="req">* </span>Email</td>
+            <td ><span class="req">* </span>Email</td>
             <td colspan="3" ><input type="email" placeholder="Email address" required></td>
         </tr>
         <tr>
-            <td><span id="req">* </span>Password</td>
+            <td><span class="req">* </span>Password</td>
             <td><input type="password"placeholder="Password" required></td>
-            <td><span id="req">* </span>Re-Password</td>
+            <td><span class="req">* </span>Re-Password</td>
             <td><input type="password"placeholder="Re-Password" required></td>
         </tr>
-    <tr>
-        <td><span id="req" required>* </span>Gender</td>
-        <td><label><input type="radio" name="gender" value="male" checked>Male</label>
-           <label> <input type="radio" name="gender" value="female">Female</label>
+    <tr >
+        <td ><span class="req" >* </span>Gender</td>
+        <td><label>Male<input type="radio" name="gender" value="male" required >
+           </label><label>Female<input type="radio" name="gender" value="female" required></label>
         </td>
-        <td><span id="req" required>* </span>Country
+        <td><span class="req">* </span>Country
             <td>
                 <select name="country" id="" >
                     <option value="cntry">Select Country</option>
-                    <option value="nepal" >Nepal</option>
+                    <option value="nepal">Nepal</option>
                     <option value="china">China</option>
                     <option value="aus">Australia</option>
                     <option value="afr">Africa</option>
@@ -59,7 +59,7 @@
     </form>
 
 </table>
-<p>Note:Marked with <span id="req">*</span>are required fields</p>
+<p>Note:Marked with <span class="req">*</span>are required fields</p>
 </div>
 <style>
     body{
@@ -77,7 +77,7 @@
         text-decoration: underline;
     }
    
-    #req{
+    .req{
         color :red;
     }
     td,input{

@@ -1,0 +1,42 @@
+
+      
+         * {
+         padding: 0px;
+         margin: 0px;
+     }
+    
+    
+     .nav {
+         background-color: green;
+         top: 0;
+         height: 40px;
+         font-size: 25px;
+         position: sticky;
+         display:flex;
+         justify-content: center;
+     }
+     .nav a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 35px;
+    }
+     
+     .nav a:hover {
+         background-color: rgb(255, 255, 255);
+         color: green;
+         padding: 5px 30px;
+         font-size: 30px;
+     }
+    
+     .call {
+         position: sticky;
+         bottom: 3px;
+         float: right;
+
+      
+     }.footer {
+
+        text-align: center;
+        color: white;
+        font-size: 23px;
+    }

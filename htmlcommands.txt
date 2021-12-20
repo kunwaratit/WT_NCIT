@@ -1,0 +1,131 @@
+<html>
+<head>
+	<base />
+	<meta>  //for mentoining author,keyword and published date 
+	<style></style> // css  stylesheet ko lagi
+	<script></script> //JS ko lagi 
+	<link> external stylesheet ko lagi
+	<title></title>
+</head>
+<body>
+	//Document Structure
+	<h1></h1> upto h6 for heading with diff size  
+	<div></div> for creating bolcks used mostly
+	<span></span> image ,style ,icon add garnw bich ma
+	<p></p> for paragraph ,plain text
+	<br> line break 
+	<hr> line break with horizontal line
+	
+
+	// Links
+	<a href=" "> for hyperlinks
+	<a href=" mailto:">message us</a>
+	<a href="tel:0124522">call us</a>
+	<a name=" name">.....</a> navigate diff part of webpage
+	< a href="#name">...</a> navigate to div section
+	
+
+	//Images
+	<img src=" " alt =" " height =" "  width =" " border=" " usemap=" "> to display images
+		//Img Attributes
+			src="url" Path where images is located on drive or webpages
+			alt="text" Text Display when user hover over the image
+			height=" "
+			width=" "
+			border=" " border width
+			usemap="#atit" create link  for (mapping) map tag 
+
+		//Mapping Image (clickable at certain places)
+		<map name="atit"> //call the image with name of use  atit
+			<area shape=" " coords=" "> specifies image map area
+				//Attribute
+				shape=" circle or rect" shape of area
+				coords=" " coordinates (vertices for rectangle ,radius /center for circle )
+			</area> 
+		</map>
+
+	//Lists
+	<ol></ol>  numbered lists of items
+	<ul></ul>	unordered lists of items
+	<li></li>	part of a list
+	<dl></dl> definitions
+	<dt></dt> 
+	<dd></dd> description for defined term
+	
+
+	//Forms
+	<form action="url" method=" " enctype="" autocomplete novadilate accept-charsets tatrget >
+		//form attributes
+		action="url" 	//data gets submitted to that url after user fills it  
+		method=" " 	//
+		enctype="" 
+		autocomplete="" 	//determines if form has auto complete enabled
+		novalidate   	//determines form should be validate before submission
+		accept-charsets 	//
+		target 		//
+	<fieldset>			//identifies group of all fields in form
+		<label></label> 	//used to label a field in form
+		<legend></legend> 	//caption for fieldsets
+	<fieldset>
+	</form>
+	
+	//Input Tag
+	<input type=" " name =" " value=" " size=" " maxlength="" placeholder=" " pattern=" " max=" " min=" " required  autofocus  disabled  >
+		//Input Attributes
+		type=" " 		//type of input  (text,password,dates)
+		name=" " 		//name of input field 
+		value=" "		//value contained in input field
+		size=" " 		//determine input element width(num of characters )
+		maxlength=" "	//most input field characters allowed
+		placeholder=" " 	//give hints to user
+		pattern=" " 	//
+		max=" "		//maximum char allowed
+		min=" "		//minimum char needed
+		required		//make input field compulsory
+		autofocus		//forces focus on input element when webpage loads
+		disabled		//disable input element
+	
+	<textarea></textarea>	//for longer text input note
+	<select name=" " size=" " multiple required autofocus>		//list of options
+		//Select Attributes
+		name=" "		//name of list
+		size=" "		//total num of options
+		multiple		// if user need to choose multiple option
+		required
+		autofocus
+		<option value=" " selected></option>	//to list items
+		<button></button>	//for form Submission
+	</select>
+	
+
+	//Tables
+	<table></table>		//makes table in webpage
+	<caption></caption>		
+	<thead></thead>
+	<tbody></tbody>
+	<tfoot></tfoot>
+	<tr></tr>
+	<th></th>
+	<td colspan="2"></td>
+	<colgroup></colgroup>
+	<col>
+
+	
+	//Objects And Iframes
+	<object height=" " width=" " type=" " >  //add additional media
+		objects attribute
+		type=" " 		//format of objects content
+		<iframe name="name of iframe" src=" url of multimedia" srcdoc=" html content to be displayed in iframe" >
+			<param>//additional parameters in content
+		</iframe>	//
+		<embed>used to embed external video</embed>
+	</object>	
+	
+	
+
+
+	//New Tags
+	<dialog>sdjaks </dialog>	
+	
+</body>
+

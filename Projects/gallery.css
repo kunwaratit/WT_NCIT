@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+.container{
+background-color: rgba(255, 248, 220, 0.726);
+}
+nav{
+    background-color: black;
+    padding: 4px;
+}
+.logo{
+       
+}
+nav li{
+    list-style-type: none;
+    display:inline-block;
+}
+.logo i{
+    color: burlywood;
+    
+}
+h1{
+    color: burlywood;
+    letter-spacing: 3px;
+    padding-left: 500px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;   
+}
+.content img{ 
+    height: 400px;
+    width: 500px;
+    margin:5px;
+    border: 1px solid white;
+    transition:all linear 250ms;
+}
+.content img:hover{
+    transform: translateY(20px) scale(1.1);
+    border-radius: 8px;
+}

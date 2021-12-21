@@ -129,3 +129,72 @@
 	
 </body>
 
+ New
+
+ 
+     .nav {
+         background-color: rgb(0, 0, 0);
+         top: 0;
+         height: 40px;
+         font-size: 25px;
+         position: sticky;
+         display:flex;
+         justify-content: center;
+         align-content: center;
+        
+     }
+     .nav a {
+        color: burlywood;
+        text-decoration: none;
+        padding: 5px;
+        font-size: 25px;
+        
+    }
+    label .logo{
+        float: left;
+        
+    }
+    li{
+        list-style-type: none;
+        display: inline-flex;  
+    }
+     
+     .nav a:hover {
+         background-color: burlywood;
+         color: rgb(0, 0, 0);
+         padding: 5px;
+         font-size: 25px;
+     }
+     
+     body{
+         background-color: rgba(97, 92, 92, 0.219);
+     }
+     .content{
+        padding: 5px 10px;
+     }
+    
+     .call {
+         position: sticky;
+         bottom: 3px;
+         float: right;
+         right:15px;
+     }
+     .call a{
+         text-decoration: none;
+         font-size: 18px;
+         color: burlywood;
+         letter-spacing: 2px;
+        
+     }
+     .call button{
+         margin:5px;
+         padding: 5px;
+         background-color:black ;
+         border-radius: 18px;
+     }
+     .call button,a:hover{
+         
+         padding: 10px;
+         color: rgb(255, 255, 255);
+     }
+     

@@ -1,60 +1,83 @@
 
-      
-         * {
-         padding: 0px;
-         margin: 0px;
-     }
-    
-    
-     .nav {
-         background-color: rgb(0, 0, 0);
-         top: 0;
-         height: 40px;
-         font-size: 25px;
-         position: sticky;
-         display:flex;
-         justify-content: center;
-     }
-     .nav a {
-        color: white;
-        text-decoration: none;
-        padding: 5px 15px;
-    }
      
-     .nav a:hover {
-         background-color: rgb(255, 255, 255);
-         color: rgb(0, 0, 0);
-         padding: 5px 5px;
-         font-size: 30px;
-     }
-     body{
-         background-color: rgba(97, 92, 92, 0.219);
-     }
-     .content{
-        padding: 5px 10px;
-     }
+    *{
+        padding: 0px;
+        margin: 0px;
+        font-size: 25px;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
     
-     .call {
-         position: sticky;
+    body{
+        background-color: rgba(97, 92, 92, 0.219);
+    }
+    .content{
+       padding: 5px 10px;
+    }
+   
+    .nav{
+        
+        background-color: black;
+        position: sticky;
+        top: 0px;
+       
+    }
+    .nav .logo,.nav{
+        padding: 4px;
+
+    }
+    .nav ul{
+        float: right;
+        padding-right:30vw ;
+    }
+    .nav ul li,.logo{
+        display: inline-block;
+        list-style-type: none;
+        margin:-8px -3px;
+    }
+    li i,li a {
+        color: burlywood;
+        padding: 5px;
+        letter-spacing: 3px;
+     }
+     .logo i{
+         color: burlywood;
+         
+     }
+    li a:hover,.fa:hover{
+         
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+    button{
+        background-color: black;
+      
+       margin: 5px 5px 5px;
+       border-radius: 15px;   
+    }
+    .call{
+        position: sticky;
          bottom: 3px;
          float: right;
-         right:15px;
-     }
-     .call a{
-         text-decoration: none;
-         font-size: 18px;
-         color: burlywood;
-         letter-spacing: 2px;
+         right: 15px;
+         top: 35px;
+    }
+    button a{
+        color: rgb(226, 157, 157);
+        padding: 5px;
+        margin: 5px;
         
-     }
-     .call button{
-         margin:5px;
-         padding: 5px;
-         background-color:black ;
-         border-radius: 18px;
-     }
-     .call button:hover{
-         
-         padding: 10px;
-     }
-     
+    }
+    button:hover{
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+    h1{
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 490px;
+    }
+    .content{
+        height: 300px;
+        
+    }

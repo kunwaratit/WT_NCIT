@@ -8,7 +8,7 @@
      arr.push(arr_ele)               //pushing array ele to the variabel arr which is an array
      sum = sum + arr[i]                 //formula
  }
- document.write("<h1> The sum is ", sum)     //displaying sum in working space
+ document.write("<h1>1. The sum is ", sum)     //displaying sum in working space
  //end
  //Qn.2 start 
 
@@ -20,7 +20,7 @@
          return (num * factorial(num - 1))   // else goes to recursive loop
      }
  }
- document.write("<br>" + "Factorial of a given num is ", factorial(num)) //calling of function and display
+ document.write("<br> 2.Factorial of a given num is ", factorial(num)) //calling of function and display
 
  //end
  //Qn.3 Start
@@ -28,7 +28,7 @@
  var num = Number(prompt("Enter a Number You to get Multiplication Table"))
  var mult_range = Number(prompt("eneter Range of Multiplication"))
  var mult = 0
- document.write("<br>Multiplication table is")
+ document.write("<br>3.Multiplication table is")
  function multiple(num) {
      for (i = 1; i <= mult_range; i++) {
 

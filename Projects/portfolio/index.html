@@ -17,78 +17,126 @@
             <li>
                 <h1>Logo</h1>
             </li>
-            <li style="margin-left:350px; "> <a href="#"> home</a></li>
-            <li><a href=""> biio</a></li>
-            <li><a href="">contact</a></li>
-            <li><a href=""> gallery</a></li>
+            <li style="margin-left:300px; "> <a href="#"> Home</a></li>
+            <li><a href=""> Bio</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href=""> Gallery</a></li>
+            <li style="font-size: 25px;"><input type="checkbox" name="" id="darkmode">DarkMode</li>
         </div>
     </ul>
     <div class="container" id="leftContainer">
-        <img src="" alt="Profile Picture" srcset="" id="profile">
-        <p>
+        <img src="prp.JPG" alt="Profile Picture" srcset="" id="profile"><br>
+        <button id=profile-photo>Change Profile</button><br>
         <pre>
+Name:Atit Kunwar
+Bio : <textarea name="" id="" cols="20" rows="1" style="font-size: 20px;"></textarea>
+Facebook:
+Github :kunwaratit
+Twitter:atitkunwar2
+Phone  :<a href="tel:+9779842803777">9842803777</a>
+Mail   :<a href="mailto:atit.191508@ncit.edu.np" >atit.191508@ncit.edu.np</a>
+</pre>
 
-
-
-        </pre> ipsum dolor, sit amet consectetur adipisicing elit. Omnis nobis aspernatur sed velit. Nostrum, officiis
-        vero sed temporibus corporis fugiat sapiente eum, molestias magni quam nam consequatur eligendi dolorem
-        soluta!>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nobis aspernatur sed velit. Nostrum,
-        officiis
-        vero sed temporibus corporis fugiat sapiente eum, molestias magni quam nam consequatur eligendi dolorem
-        soluta!>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nobis aspernatur sed velit. Nostrum,
-        </p>
     </div>
-    <div class="container" id="rightCcontainer"></div>
+    <div class="container" id="rightCcontainer">
+        <div id="home">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe omnis aliquid accusamus sit quidem fugit
+                quisquam blanditiis iure repudiandae culpa dolores placeat exercitationem suscipit qui velit nihil
+                distinctio, perferendis explicabo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+                soluta laudantium, quod inventore odit nulla suscipit vel. Optio culpa adipisci corporis fugiat totam
+                provident alias libero, deleniti excepturi velit quidem!</p>
+        </div>
+        <div id="bio">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe omnis aliquid accusamus sit quidem fugit
+                quisquam blanditiis iure repudiandae culpa dolores placeat exercitationem suscipit qui velit nihil
+                distinctio, perferendis explicabo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+                soluta laudantium, quod inventore odit nulla suscipit vel. Optio culpa adipisci corporis fugiat totam
+                provident alias libero, deleniti excepturi velit quidem!</p>
+        </div>
+        <div id="contact"></div>
+        <div id="gallery"></div>
+    </div>
 
 
     <style>
         * {
-            font-size: 35px;
+            font-size: 28px;
             margin: auto;
             padding: auto;
             box-sizing: border-box;
+
+        }
+
+        #right-container {
+
+            height: fit-content;
+            border-right: 5px ridge rgb(18, 189, 241);
+            border-bottom: 5px ridge rgb(18, 189, 241);
+
+        }
+
+        pre a {
+            font-size: 18px;
+        }
+
+        #profile-photo {
+            float: right;
+            font-size: 20px;
+            margin-right: 15px;
         }
 
         #profile {
-            height: 50px;
-            width: 50px;
+            margin-top: 5px;
+            height: 200px;
+            width: 190px;
+            transform: translateX(55%);
+            border: 3px ridge aqua;
+            border-radius: 130px;
         }
 
         .container {
             float: left;
-
         }
 
         div {
             padding-left: 13px;
+
         }
 
         #leftContainer {
-            width: 35%;
+
+            width: 30%;
             min-width: 30%;
             height: fit-content;
             border-right: 5px ridge rgb(18, 189, 241);
+            border-bottom: 5px ridge rgb(18, 189, 241);
+
         }
 
-        #list {
+        #list,
+        li {
             background-color: rgba(51, 50, 50, 0.726);
             display: inline-flex;
+
+
         }
 
         ul {
             list-style-type: none;
             background-color: rgba(51, 50, 50, 0.726);
+
         }
 
-        a {
+        #list a {
             text-decoration: none;
             color: aqua;
             padding: 0px 15px;
+            font-size: 35px;
         }
 
-        a:hover {
+        #list a:hover {
             background-color: rgb(255, 0, 0);
-            margin: 2px;
+
         }
     </style>
 

@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 
 </head>
@@ -17,129 +17,87 @@
             <li>
                 <h1>Logo</h1>
             </li>
-            <li style="margin-left:300px; "> <a href="#"> Home</a></li>
-            <li><a href=""> Bio</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href=""> Gallery</a></li>
+            <li style="margin-left:40%; "> <a href="#" onclick="pchangey(event,'home')" class="list"> Home</a></li>
+            <li><a href="#" onclick="pchangey(event,'bio')" class="list"> Bio</a></li>
+            <li><a href="#" onclick="pchangey(event,'contact')" class="list">Contact</a></li>
+            <li><a href="#" onclick="pchangey(event,'gallery')" class="list"> Gallery</a></li>
             <li style="font-size: 25px;"><input type="checkbox" name="" id="darkmode">DarkMode</li>
         </div>
     </ul>
-    <div class="container" id="leftContainer">
-        <img src="prp.JPG" alt="Profile Picture" srcset="" id="profile"><br>
-        <button id=profile-photo>Change Profile</button><br>
-        <pre>
-Name:Atit Kunwar
-Bio : <textarea name="" id="" cols="20" rows="1" style="font-size: 20px;"></textarea>
-Facebook:
-Github :kunwaratit
-Twitter:atitkunwar2
-Phone  :<a href="tel:+9779842803777">9842803777</a>
-Mail   :<a href="mailto:atit.191508@ncit.edu.np" >atit.191508@ncit.edu.np</a>
-</pre>
+
+
+    <div style="display: inline;">
+
+        <div class="container" id="leftContainer">
+            <img src="prp.JPG" alt="Profile Picture" srcset="" id="profile-photo"><br>
+            <button id=change-profile>Change Profile</button><br>
+            <pre>
+ Name:Atit Kunwar
+ Bio : <textarea name="" id="" cols="20" rows="1" style="font-size: 15px;">hello</textarea>
+ Facebook:
+ Github  :kunwaratit
+ Twitter :atitkunwar2
+ Phone :<a href="tel:+9779842803777">9842803777</a>
+ Mail  :<a href="mailto:atit.191508@ncit.edu.np" >atit.191508@ncit.edu.np</a> </pre>
+        </div>
+
+        <div class="container" id="rightCcontainer">
+
+            <div class="cntnt" id="home">
+                <p> homeatutLorem ipsum dolor sit amet consectetur adipisicing elit. Saepe omnis aliquid accusamus sit
+                    quidem
+                    fugit
+                    quisquam blanditiis iure repudiandae culpa dolores placeat exercitationem suscipit qui velit nihil
+                    distinctio, perferendis explicabo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+                    soluta laudantium, quod inventore odit nulla suscipit vel. Optio culpa adipisci corporis fugiat
+                    totam
+                    provident alias libero, deleniti excepturi velit quidem!</p>
+            </div>
+            <div class="cntnt" id="bio">
+                <p>bioLorem ipsum dolor sit amet consectetur adipisicing elit. Saepe omnis aliquid accusamus sit quidem
+                    fugit
+                    quisquam blanditiis iure repudiandae culpa dolores placeat exercitationem suscipit qui velit nihil
+                    distinctio, perferendis explicabo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+                    soluta laudantium, quod inventore odit nulla suscipit vel. Optio culpa adipisci corporis fugiat
+                    totam
+                    provident alias libero, deleniti excepturi velit quidem!</p>
+            </div>
+            <div class="cntnt" id="contact">
+                <p>contactLorem ipsum dolor sit amet consectetur adipisicing elit. Saepe omnis aliquid accusamus sit
+                    quidem
+                    fugit
+                    quisquam blanditiis iure repudiandae culpa dolores placeat exercitationem suscipit qui velit nihil
+                    distinctio, perferendis explicabo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+                    soluta laudantium, quod inventore odit nulla suscipit vel. Optio culpa adipisci corporis fugiat
+                    totam
+                    provident alias libero, deleniti excepturi velit quidem!</p>
+            </div>
+            <div class="cntnt" id="gallery">
+                <p>galleryLorem ipsum dolor sit amet consectetur adipisicing elit. Saepe omnis aliquid accusamus sit
+                    quidem
+                    fugit
+                    quisquam blanditiis iure repudiandae culpa dolores placeat exercitationem suscipit qui velit nihil
+                    distinctio, perferendis explicabo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+                    soluta laudantium, quod inventore odit nulla suscipit vel. Optio culpa adipisci corporis fugiat
+                    totam
+                    provident alias libero, deleniti excepturi velit quidem!</p>
+            </div>
+        </div>
 
     </div>
-    <div class="container" id="rightCcontainer">
-        <div id="home">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe omnis aliquid accusamus sit quidem fugit
-                quisquam blanditiis iure repudiandae culpa dolores placeat exercitationem suscipit qui velit nihil
-                distinctio, perferendis explicabo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
-                soluta laudantium, quod inventore odit nulla suscipit vel. Optio culpa adipisci corporis fugiat totam
-                provident alias libero, deleniti excepturi velit quidem!</p>
-        </div>
-        <div id="bio">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe omnis aliquid accusamus sit quidem fugit
-                quisquam blanditiis iure repudiandae culpa dolores placeat exercitationem suscipit qui velit nihil
-                distinctio, perferendis explicabo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
-                soluta laudantium, quod inventore odit nulla suscipit vel. Optio culpa adipisci corporis fugiat totam
-                provident alias libero, deleniti excepturi velit quidem!</p>
-        </div>
-        <div id="contact"></div>
-        <div id="gallery"></div>
-    </div>
+    <script>
+        var old = "gallery";
+        function pchangey(evt, name) {
 
-
-    <style>
-        * {
-            font-size: 28px;
-            margin: auto;
-            padding: auto;
-            box-sizing: border-box;
-
+            var i;
+            var cntnt = document.getElementsByClassName("cntnt");
+            for (i = 0; i < cntnt.length; i++) {
+                cntnt[i].style.display = "none";
+            }
+            document.getElementById(name).style.display = "block";
         }
 
-        #right-container {
-
-            height: fit-content;
-            border-right: 5px ridge rgb(18, 189, 241);
-            border-bottom: 5px ridge rgb(18, 189, 241);
-
-        }
-
-        pre a {
-            font-size: 18px;
-        }
-
-        #profile-photo {
-            float: right;
-            font-size: 20px;
-            margin-right: 15px;
-        }
-
-        #profile {
-            margin-top: 5px;
-            height: 200px;
-            width: 190px;
-            transform: translateX(55%);
-            border: 3px ridge aqua;
-            border-radius: 130px;
-        }
-
-        .container {
-            float: left;
-        }
-
-        div {
-            padding-left: 13px;
-
-        }
-
-        #leftContainer {
-
-            width: 30%;
-            min-width: 30%;
-            height: fit-content;
-            border-right: 5px ridge rgb(18, 189, 241);
-            border-bottom: 5px ridge rgb(18, 189, 241);
-
-        }
-
-        #list,
-        li {
-            background-color: rgba(51, 50, 50, 0.726);
-            display: inline-flex;
-
-
-        }
-
-        ul {
-            list-style-type: none;
-            background-color: rgba(51, 50, 50, 0.726);
-
-        }
-
-        #list a {
-            text-decoration: none;
-            color: aqua;
-            padding: 0px 15px;
-            font-size: 35px;
-        }
-
-        #list a:hover {
-            background-color: rgb(255, 0, 0);
-
-        }
-    </style>
-
+    </script>
 </body>
 
 </html>

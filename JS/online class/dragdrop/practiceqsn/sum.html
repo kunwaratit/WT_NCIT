@@ -1,0 +1,37 @@
+<!--return sum of first and last element of array-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum</title>
+</head>
+
+<body>
+    <div id="container">
+        <p id="content"></p>
+    </div>
+    <style>
+        * {
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        var sum;
+        var array = [1, 2, 3, 4, 5];
+        var array2 = ["Atit", "Kunwar"];
+
+        for (var i in array, array2) {
+            sum = array[0] + array[4];
+            sum2 = array2[0] + array2[1];
+        }
+        document.getElementById("content").innerHTML =
+            "Array : " + array + " <br> Sum of 1st and last element of array is " + sum +
+            "<br><br>Array:" + array2 + " <br> Sum of 1st and last element of array is " + sum2;
+
+    </script>
+</body>
+
+</html>

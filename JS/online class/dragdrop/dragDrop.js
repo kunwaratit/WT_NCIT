@@ -33,4 +33,12 @@ function dropper() {
     document.removeEventListener("mouseup", dropper, false);
 
 }
+document.getElementById("container").addEventListener("mouseup", noclick, true);
+document.getElementById("container").addEventListener("mousedown", click, true);
+function click(mousedown) {
+    var ele = document.getElementById("container").innerHTML = "mouse is clicked";
+}
+function noclick() {
+    document.getElementById("container").innerHTML = "";
 
+}

@@ -1,92 +1,59 @@
 * {
     font-size: 28px;
     margin: auto;
-    padding: auto;
     box-sizing: border-box;
-
-
 }
-
-.cntnt {
-    display: none;
+body{
+    background-color: rgba(0, 0, 255, 0.52);
+  
 }
-
-#right-container {
-    height: fit-content;
-    border-right: 5px ridge rgb(18, 189, 241);
-    border-bottom: 5px ridge rgb(112, 193, 218);
+ul {
+    list-style-type: none;
+    background-color: rgba(51, 50, 50, 0.863);
 }
-
-pre {
-    font-size: 20px;
+#list {
+    display: inline-flex;
+    margin-left: 20vw;
 }
-
-
-pre a {
-    font-size: 18px;
-    color: rgb(41, 134, 241);
+#list a {
+    text-decoration: none;
+    color: aqua;
+    padding: 0px 15px;
+    font-size: 35px;  
 }
-
-#change-profile {
-    float: right;
-    font-size: 20px;
-    margin-right: 15px;
+#list a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(200, 173, 53);
 }
-
+#navBar {
+    position: sticky;
+    top: 0%;     
+}
+#leftContainer {
+    max-height:450px;
+    min-width:fit-content;
+    border-right: 5px ridge rgb(18, 241, 137);
+    border-bottom: 5px ridge rgb(18, 189, 241);  
+    margin: 0px;
+    background-color: rgba(43, 231, 238, 0.486);
+}
 #profile-photo {
-    position: static;
     height: 200px;
     width: 190px;
     margin-left: 20px;
     border: 3px ridge aqua;
     border-radius: 130px;
 }
-
-div {
-    padding-left: 15px;
-
+pre {
+    font-size: 20px;
 }
-
-#leftContainer {
-    float: left;
-    width: fit-content;
-    height: fit-content;
-    border-right: 5px ridge rgb(18, 241, 137);
-    border-bottom: 5px ridge rgb(18, 189, 241);
-
-
-
-
-
+pre a {
+    font-size: 18px;
+    color: rgb(41, 134, 241);
 }
-
-#list,
-li {
-    display: inline-flex;
-
+#rightContainer {
+  background-color: rgba(43, 231, 238, 0.486);
 }
-
-ul {
-    list-style-type: none;
-    background-color: rgba(51, 50, 50, 0.863);
-
-}
-
-#list a {
-    text-decoration: none;
-    color: aqua;
-    padding: 0px 15px;
-    font-size: 35px;
-}
-#list a:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(200, 173, 53);
-}
-a:visited{
-    background-color: green;
-}
-#navBar {
-    position: sticky;
-    top: 0%;
-    width: 100vw;
+.cntnt{
+    display: none;
 }

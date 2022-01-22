@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble/Capture Events</title>
+</head>
+
+<body>
+    <h1>Comment out one of the script</h1>
+    <div id="cont5">
+        <div id="cont4">
+            <div id="cont3">
+                <div id="cont2">
+                    <div id="cont1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="valuea"></div>
+    <!--comment out one of string and check -->
+    <script src="capturing.js"></script>
+
+    <script src="bubbling.js"></script>
+
+
+    <style>
+        #cont1 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(245, 120, 245);
+        }
+
+        #cont2 {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(178, 120, 245);
+        }
+
+        #cont3 {
+            height: 300px;
+            width: 300px;
+            background-color: rgb(120, 185, 245);
+        }
+
+        #cont4 {
+            height: 400px;
+            width: 400px;
+            background-color: rgb(120, 245, 214);
+        }
+
+        #cont5 {
+            height: 500px;
+            width: 500px;
+            background-color: rgb(130, 245, 120);
+        }
+
+
+        div {
+            border: 1px solid black;
+        }
+    </style>
+</body>
+
+</html>

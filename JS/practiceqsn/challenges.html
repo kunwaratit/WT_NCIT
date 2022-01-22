@@ -6,16 +6,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sum</title>
+    <title>Challenges</title>
 </head>
 
 <body>
-    <div id="container">
-        <h1>Qn.1</h1>
+    <div class="container">
+        <h1 style="">Qn.1. Sum of 1st and last element in an array
+        </h1>
         <p id="content"></p>
     </div>
-    <div id="container2">
+    <div class="container">
         <h1>Qn.2</h1>
+        <p id="lengthyarr"></p>
+    </div>
+    <div class="container">
+        <h1>Qn.3</h1>
+        <p> Is spele and sleep are anagram?</p>
+        <br>
+        <p id="anagram"></p>
+    </div>
+    <div class="container">
+        <h1>Qn.4</h1>
+        <p id="lengthyarr"></p>
+    </div>
+    <div class="container">
+        <h1>Qn.5</h1>
         <p id="lengthyarr"></p>
     </div>
     <style>
@@ -27,10 +42,30 @@
             border: 1px solid black;
             height: 200px;
             width: 400px;
+            display: flex;
+            flex-wrap: row;
+        }
+
+        .container {
+            display: block;
+
+        }
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        h1 {
+            text-decoration: underline red;
+
         }
     </style>
     <script src="challenge1.js"></script>
     <script src="challenge2.js">  </script>
+    <script src="challenge3.js">  </script>
+    <script src="challenge4.js">  </script>
 </body>
 
 </html>

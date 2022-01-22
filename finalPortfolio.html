@@ -11,15 +11,14 @@
 <body>
     <div id="container">
         <div id="navbar">
-            <a href="Portfolio.html">
-                <h1 style="color: cornsilk;text-align:center;margin:0px;">Atit Kunwar</h1>
-            </a>
-            <hr>
+
+
             <ul>
                 <li><a href="">Info</a></li>
+                <li><a href="#cv">CV</a></li>
                 <li><a href="#contact-content">Contact</a></li>
                 <li><a href="">About Me</a></li>
-                <li><a href="">Bio</a></li>
+
             </ul>
         </div>
         <div id="content" style="margin: auto;">
@@ -32,10 +31,37 @@
                         suscipit voluptatum nobis quia incidunt nostrum cupiditate iusto odio numquam ipsa vel?</p>
                 </div>
                 <hr>
+
+                <h2 id="cv">Cirruculam Vitae</h2><br>
+                <div id="cv-content">
+
+                    <h3>Personal Details</h3>
+
+                    <p>Name : Atit Kunwar <br>
+                        Permanent Address: Tamghas-01,Gulmi <br>
+                        Contact Address : 9842803777<br>
+                        Date of Birth : 2002/3/10<br>
+                        Sex : Male<br>
+                        Fathers Name : Min Bdr. Kunwar<br>
+                        Mothers Name : Tika Kunwar<br>
+                        Nationality : Nepali<br>
+                        Marital Status : Unmarried<br>
+                        Religion : Hindu<br>
+                        Language Known : English, Nepali, Hindi<br>
+                    </p>
+                    <h3>Academic Qualification</h3>
+                    <p>
+                        2019 ,BE IT ,Pokhara University ,Computer <br>
+                        2014-2015 , +2 ,NEB , Science,<br>
+                        - 2013 ,SEE ,NEB </p>
+
+
+                </div>
+                <hr>
                 <!--contact info-->
                 <div id=contact-content>
                     <form action="">
-                        <h1 style="padding-top:50px;">Get In Touch</h1>
+                        <h1>Get In Touch</h1>
                         <h2>Contact Form</h2>
                         <p>Name</p>
                         <input type="text" placeholder="Your Name" title="Full Name" autofocus>
@@ -61,11 +87,17 @@
         </div>
         <footer>copyright&copy;<a href="Portfolio.html">Atit Kunwar</a></footer>
     </div>
+    <script>
+
+
+    </script>
     <style>
         * {
 
             box-sizing: border-box;
             text-decoration: none;
+            clear: both;
+
 
         }
 
@@ -76,7 +108,7 @@
         #navbar {
             background-color: rgb(14, 58, 109);
             position: sticky;
-            top: -50px;
+            top: 0px;
             margin: 0px;
 
         }
@@ -93,6 +125,7 @@
             font-weight: 400;
             margin: 5px 12px;
             padding-left: 5px;
+
 
         }
 
@@ -126,11 +159,19 @@
 
         }
 
+
         span {
             margin-bottom: 10%;
             position: sticky;
             top: 50px;
+            bottom: 0px;
             margin-left: 5px;
+        }
+
+        #cv-content {
+            border: 2px solid black;
+            height: fit-content;
+            padding-left: 5px;
         }
 
         footer,
@@ -143,6 +184,10 @@
             font-weight: 400;
             text-decoration: underline;
 
+        }
+
+        p {
+            padding-left: 10px;
         }
     </style>
 </body>

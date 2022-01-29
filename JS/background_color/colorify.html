@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <div class="body">
+        <p>
+            background color <br>
+            <input type="text" id="bgcolor"><br>
+            color <br>
+            <input type="text" id="color"><br>
+            <input type="button" value="button" id="btn">
+        </p>
+    </div>
+    <script>
+
+        var btn = document.querySelector('#btn').addEventListener('click', colorify);
+        function colorify() {
+            var bgcolor = document.querySelector('#bgcolor').value;
+            var color = document.querySelector('#color').value;
+            document.querySelector('#body').style.backgroundColor = bgcolor;
+            document.querySelector('#body').style.color = color;
+        }  
+    </script>
+
+    <style>
+        body {
+            background-color: black;
+            color: antiquewhite;
+            font-size: 24px;
+        }
+
+        #body {
+            text-align: center;
+            border: 3px solid white;
+        }
+    </style>
+</body>
+
+</html>

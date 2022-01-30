@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js"
-        integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD"
-        crossorigin="anonymous"></script>
+        integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD" crossorigin="anonymous">
+        </script>
     <title>Atit Kunwar</title>
 </head>
 
@@ -17,7 +17,7 @@
         <div id="navbar">
             <ul>
                 <li>
-                    <h5 style="margin: 0px; padding:0px; color:white;">Atit Kunwar</h5>
+                    <a href="#">Atit Kunwar</a>
                 </li>
                 <li><a href="#info">Info</a></li>
                 <li><a href="#cv">CV</a></li>
@@ -25,52 +25,58 @@
                 <li><a href="#info-content">About Me</a></li>
             </ul>
         </div>
-        <div id="content" style="margin: auto;">
+
+        <div id="content">
             <div id="content-item">
                 <div id="info">
-                    <h2 style="margin: 0px;">Atit Kunwar</h2>
-                    <hr>
-                    <br><img src="prp.JPG" alt="Profile Picture" srcset="" id="profile-photo"><br>
-                    <p> Name : Atit Kunwar <br>
-                        Address : Naikap,KAthmandu
-                    </p>
-                    <a href="tel:+9779842803777" title="Call Me"><i class="fas fa-phone-volume"></i> -
-                        9842803777</a><br>
-                    <a href="mailto:atit.191508@ncit.edu.np" title="Mail"><i class="fas fa-envelope"> </i>
-                        - atit.191508@ncit.edu.np</a>
-
-                    <h1 style="margin: 0px; color:rgb(138, 138, 138);">Connet With ME</h1>
-                    <ul id="connect">
-                        <li><a href="#" title="Facebook:Atit kunwar"><i class="fab fa-facebook"></i> </a></li>
-                        <li><a href="https://github.com/kunwaratit" title="Github:kunwaratit"> <i
-                                    class="fab fa-github"></i>
-
-                            </a></li>
-
-                        <li><a href="https://twitter.com/Atitkunwar2?t=UL4YLQn1So_CCGLxOIuP6Q&s=09"
-                                title="twitter:atitkunwar2"><i class="fab fa-twitter"></i></a>
-
+                    <h2 style="margin: 0px;">
+                        Atit Kunwar
+                    </h2>
+                    <hr><br>
+                    <img src="prp.JPG" alt="Profile Picture" srcset="" id="profile-photo"><br>
+                    <pre style="margin-bottom: 0px;"> Name : Atit Kunwar
+         Address : Naikap,KAthmandu
+  Phone <i class="fas fa-phone-volume"> <a href="tel:+9779842803777" title="Call Me"></i>:9842803777</a>
+              Mail <i class="fas fa-envelope"> <a href="mailto:atit.191508@ncit.edu.np" title="Mail">
+                        </i> :atit.191508@ncit.edu.np</a></pre>
+                    <h1 style="margin: 0px; color:rgb(138, 138, 138);">
+                        Connet With ME</h1>
+                    <!--connect-->
+                    <ul id="connect" style="margin: 0px;">
+                        <!--facebook-->
+                        <li id="facebook">
+                            <a href="#" title="Facebook:Atit kunwar" target="blank">
+                                <i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <!--instagram-->
+                        <li id="insta">
+                            <a href="https://instagram.com/kunwar_atit" target="blank">
+                                <i class="fab fa-instagram"></i></a>
+                        </li>
+                        <!--github-->
+                        <li>
+                            <a href="https://github.com/kunwaratit" target="blank" title="Github:kunwaratit">
+                                <i class="fab fa-github"></i></a>
+                        </li>
+                        <!--twitter-->
+                        <li id="twitter">
+                            <a href="https://twitter.com/Atitkunwar2" target="blank" title="twitter:atitkunwar2">
+                                <i class="fab fa-twitter"></i></a>
                         </li>
                     </ul>
                 </div>
                 <hr>
+                <!--information-->
                 <div id="info-content">
-                    <p><strong style="font-size: 25px;">
+                    <p style="font-size: 28px;"><strong style="font-size: 30px;">
                             Hi !
-                        </strong> ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptate
-                        necessitatibus
-                        delectus est quas odio officiis quibusdam laborum accusamus nulla atque quod maxime dicta,
-                        facilis ipsum illum repellendus ad beatae! Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Recusandae sunt, quibusdam eius necessitatibus qui laboriosam eos, soluta, eligendi
-                        suscipit voluptatum nobis quia incidunt nostrum cupiditate iusto odio numquam ipsa vel?</p>
+                        </strong>Myself Atit Kunwar.I am a front-end and back-end webdeveloper.
                 </div>
                 <hr>
 
                 <h2 id="cv">Cirruculam Vitae</h2><br>
                 <div id="cv-content">
-
                     <h3>Personal Details</h3>
-
                     <p>Name : Atit Kunwar <br>
                         Permanent Address: Tamghas-01,Gulmi <br>
                         Contact Address : 9842803777<br>
@@ -151,17 +157,18 @@
                 <!--contact info-->
                 <div id=contact-content>
                     <h1 style="text-align: center; color:white;">Contact Us</h1>
-                    <p>if any queries and Message you can</p>
+                    <p>If any Queries you can Message...<br>
 
                     <form action="">
 
-                        <p>Name</p>
+                        Name : <br>
                         <input type="text" placeholder="Your Name" title="Full Name" required>
-                        <p>E-mail</p>
+                        <br>E-mail : <br>
                         <input type="email" placeholder="abcde24@game.com" title="E-mail address" required>
-                        <p>Message</p>
-                        <textarea name="aa" style="resize:none; width:60%;"></textarea>
+                        <br> Message : <br>
+                        <textarea name="aa"></textarea><br>
                         <button type="submit">Send</button>
+                        </p>
 
                         <p style="color: beige;">
                             You can also conatct Here: <br>
@@ -179,16 +186,8 @@
             <!--photo-->
 
         </div>
-        <!-- <footer>copyright&copy;<a href="Portfolio.html">Atit Kunwar</a></footer>-->
+        <footer>copyright&copy;<a href="Portfolio.html">Atit Kunwar</a></footer>
     </div>
-    <script>
-
-
-    </script>
-    <style>
-
-    </style>
-
 </body>
 
 </html>

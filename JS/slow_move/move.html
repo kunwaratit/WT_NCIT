@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <title>Slow_move</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="box" style="top: 15px;left: 15px;">
+        </div>
+
+    </div> <input type="button" value="button" id="btn">
+    <script>
+        var btn = document.querySelector('#btn').addEventListener('click', go);
+        var ele = document.querySelector('#box');
+        var x = parseInt(ele.style.top);
+        var y = parseInt(ele.style.left);
+
+        function go() {
+            setInterval(move, 1);
+            function move() {
+                var stopx = 400, stopy = 400;
+                if (x == stopx && y == stopy) {
+                    console.log('stopped');
+                } else {
+                    if (x < stopx) {
+                        x++;
+                    } if (y < stopy) {
+                        y++;
+
+                    } if (x > stopx) {
+                        x--;
+                    }
+                    if (y > stopy) {
+                        y--;
+                    }
+
+                    ele.style.top = y + "px";
+                    ele.style.left = x + "px";
+                }
+            }
+        }
+    </script>
+    <style>
+        #container {
+            height: 500px;
+            width: 500px;
+            background-color: pink;
+        }
+
+        #box {
+            background-color: orange;
+            border-radius: 50px;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+
+        }
+    </style>
+
+</body>
+
+</html>

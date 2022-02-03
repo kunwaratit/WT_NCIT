@@ -11,9 +11,7 @@ nav{
     background-color: black;
     padding: 4px;
 }
-.logo{
-       
-}
+
 nav li{
     list-style-type: none;
     display:inline-block;

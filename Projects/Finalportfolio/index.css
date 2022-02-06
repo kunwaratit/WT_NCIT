@@ -49,6 +49,7 @@ body {
     padding: 15px;
     margin-bottom: 0px;
     color: aliceblue;
+
 }
 #connect,
 li,
@@ -86,15 +87,15 @@ input {
 }
 #info {
     font-size: 20px;
-    text-align: center;
-    
+  
 }
 #info #profile-photo {
-    height: 200px;
-    width: 190px;
-    border: 3px ridge aqua;
-    border-radius: 130px;
-
+    
+    width: 200px;
+    height:200px;
+    
+    border: ridge rgb(255, 255, 255);
+  float: right;
 }
 #cv-content {
     border: 2px solid black;
